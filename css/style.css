@@ -1,0 +1,212 @@
+*,*::after, *::before {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Path: css/style.css */
+body{
+    margin:0 auto;
+    max-width: 1440px;
+}
+div.black-top{
+    background-color: #121212;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    color:#fff;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+    margin:0 auto;
+   
+    
+}
+
+header section:first-child{
+    display: flex;
+    justify-content: space-between;
+}
+
+img.logo{
+    margin:0 1rem;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap:40px
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#4e4e4e;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+nav ul li a:hover{
+    color:#fff;
+}
+
+section.social ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap:20px
+}
+
+section#hero{
+    font-size: 19.3vh;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    margin: 0 50px;
+    font-weight: 900;
+    border-bottom: 1px solid#4e4e4e;;
+    border-top: 1px solid#4e4e4e;
+
+}
+
+section#featured{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin:0 2rem;
+    padding: 2rem 2rem;
+    gap:50px;
+}
+
+section#featured-article{
+    display: flex;
+    align-items: flex-start;
+    min-width: 640px;
+    flex-direction: column;
+
+}
+
+section#featured-article h2{
+    font-size: 32px;
+    line-height:42px;
+    width: 100%;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+}
+h5.date{
+    font-size: 14px;
+    line-height:14px;
+    width: 100%;
+    font-weight: 300;
+
+    color:#4e4e4e;
+}
+section#featured-article p{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    margin: 0 0 1rem 0;
+}
+section#featured-article img{
+    width: 100%;
+
+}
+   
+section#recent-articles {
+  display: flex;
+  flex-direction: column;
+    align-items: flex-start;
+  justify-content: flex-start;
+  align-items:flex-start;
+
+}
+
+section#recent-articles ul li{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    list-style: none;
+    margin:0 0 50px 0;
+
+}
+section#recent-articles ul li a{
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    text-decoration: none;
+    color:white;
+    gap:50px;
+
+}
+
+section#recent-articles ul li a h3{
+    font-size:25px;
+    line-height: 35px;
+}
+
+section#recent-articles ul li a img{
+    width: 100%;
+}
+
+section#recent-articles ul li a div{
+    flex-grow:1;
+}
+
+
+section#articles-to-read ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin:5rem 0;
+    list-style: none;
+    gap:10px;
+}
+section#articles-to-read ul li{
+    width:290px;
+}
+section#articles-to-read ul li a{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    text-decoration: none;
+    gap:20px;
+    color:black;
+
+
+
+}
+
+section#articles-to-read ul li a img{
+    width: 100%;
+}
+
+section#articles-to-read ul li a h3{
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+}
+section#articles-to-read ul li a p{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    margin: 0 0 1rem 0;
+}
+
+.active{
+    color: white;
+}
+/* Responsive assignment */
+
+@media screen and (max-width:1230px){
+    section#featured{
+        flex-flow: row wrap;
+    }
+}
